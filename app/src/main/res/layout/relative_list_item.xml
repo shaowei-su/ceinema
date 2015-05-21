@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight">
+    
+    <TextView
+        android:id="@+id/rightText"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textSize="12dip"
+        android:text="right"/>
+    <ImageView
+        android:id="@+id/listIcon"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+    	android:id="@+id/topText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"      
+        android:layout_toLeftOf="@id/rightText"
+        android:layout_toRightOf="@+id/listIcon"       
+        android:layout_alignParentTop="true"       
+        android:ellipsize="marquee"
+        android:textStyle="bold"
+        android:textSize="16dip"
+        android:text="top"/>     
+    <TextView  
+        android:id="@+id/bottomText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_toLeftOf="@id/rightText"
+        android:layout_toRightOf="@+id/listIcon"                
+        android:layout_below="@+id/topText"
+        android:singleLine="false"
+        android:ellipsize="marquee"
+        android:textSize="14dip"
+        android:text="bottom"/>
+    <TextView android:id="@+id/from_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hidden value"
+        android:visibility="gone"/>
+    <TextView android:id="@+id/from_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+ 
+</RelativeLayout>

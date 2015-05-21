@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="white">#FFFFFF</color>
+	<color name="grey">#DDDDDD</color>
+	<style name="CustomTheme" parent="android:Theme.Light">
+		<item name="android:windowBackground">@color/white</item>
+		<item name="android:colorBackground">@color/white</item>
+		<item name="android:windowTitleSize">60dip</item>
+        <item name="android:windowTitleBackgroundStyle">@android:color/transparent</item>
+	</style>
+	<style name="CustomThemeNoTitle" parent="CustomTheme">
+		<item name="android:windowBackground">@color/white</item>
+		<item name="android:colorBackground">@color/white</item>
+		<item name="android:windowNoTitle">true</item>
+	</style>
+</resources> 

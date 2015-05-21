@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="3dp" android:color="#cf2e1a" />
+    <padding android:left="7dp" android:top="7dp"
+            android:right="7dp" android:bottom="7dp" />
+    <corners android:radius="1dp"></corners>
+</shape><!-- From: file:/Users/shaowei/StudioProjects/CEInema/app/src/main/res/drawable-hdpi/image_border_focused.xml -->

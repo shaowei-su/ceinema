@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingLeft="5dip"
+    android:background="@drawable/cei_header">
+ 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cei_logo" />
+
+    <LinearLayout 
+        android:id="@+id/title_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_toRightOf="@+id/imageView1"
+        android:layout_marginTop="10dip"
+        android:gravity="right|center_vertical"
+        android:paddingRight="5dip" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dip"
+            android:paddingRight="5dip" 
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_marginBottom="0dp"/>
+        
+     </LinearLayout>
+
+      <TextView
+          android:id="@+id/under_title"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/imageView1"
+          android:layout_below="@+id/title_group"
+          android:text="HIV Clinical Education Initiative (CEI)"
+          android:textColor="@color/white"
+          android:textSize="10dip"
+          android:textStyle="bold" />
+        
+</RelativeLayout><!-- From: file:/Users/shaowei/StudioProjects/CEInema/app/src/main/res/layout/window_title.xml -->
