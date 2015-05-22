@@ -76,23 +76,27 @@ public class VideoPlayer extends Activity {
 			
 			if( extras != null && extras.containsKey("URL")) {
 				//URL = "http://ceitraining.org/media/video/mobile/" + extras.getString("URL");
-				URL = "http://ceitraining.org/media/video/mobile/HTTP_streaming/" + extras.getString("URL").replace("_low.3gp", "").replace("_high.3gp", "") + "/" + extras.getString("URL").replace("_low.3gp", "").replace("_high.3gp", "") + ".m3u8";
+				//URL = "http://ceitraining.org/media/video/mobile/HTTP_streaming/" + extras.getString("URL").replace("_low.3gp", "").replace("_high.3gp", "") + "/" + extras.getString("URL").replace("_low.3gp", "").replace("_high.3gp", "") + ".m3u8";
 				//URL = "http://phobos.urmc-sh.rochester.edu/media/video/mobile/HTTP_streaming/" + extras.getString("URL").replace("_low.3gp", "").replace("_high.3gp", "") + "/" + extras.getString("URL").replace("_low.3gp", "").replace("_high.3gp", "") + ".m3u8";
 				//URL = "http://phobos.urmc-sh.rochester.edu:1935/vod/smil:tutorial-1.smil/playlist.m3u8";
-				
+				URL = "http://ceiconnect.org:1936/vod/definst/smil:" + extras.getString("URL").replace("_low.3gp", "").replace("_high.3gp", "") + "/" + extras.getString("URL").replace("_low.3gp", "").replace("_high.3gp", "") + ".smil/playlist.m3u8";
 				//URL = Configurator.SERVER_URL + "/media/video/mobile/HTTP_streaming/" + extras.getString("URL").replace("_low.3gp", "").replace("_high.3gp", "") + "/" + extras.getString("URL").replace("_low.3gp", "").replace("_high.3gp", "") + ".m3u8";
 				//URL = "http://ceitraining.org/media/video/mobile/HTTP_streaming/" + extras.getString("URL").replace("_low.3gp", "").replace("_high.3gp", "") + "/" + "stream-3-480000/index.m3u8";
 				
 			}
 			
 			if(!exists(URL)){
-				Toast.makeText(this, "Sorry, the video '" + URL + "' does not exist ", Toast.LENGTH_LONG).show();
+				Toast.makeText(this, "NO WOWZA, Sorry, the video '" + URL + "' does not exist ", Toast.LENGTH_LONG).show();
+				URL = "http://ceitraining.org/media/video/mobile/HTTP_streaming/" + extras.getString("URL").replace("_low.3gp", "").replace("_high.3gp", "") + "/" + extras.getString("URL").replace("_low.3gp", "").replace("_high.3gp", "") + ".m3u8";
 			}
-			else   
-			{
+
+			if(!exists(URL)) {
+				Toast.makeText(this, "NO HTTP, Sorry, the video '" + URL + "' does not exist ", Toast.LENGTH_LONG).show();
+			}
+			else {
 				if (URL.contains("_high.3gp"))
 					quality = "High Quality ";
-				
+				//URL = "http://ceiconnect.org:1936/vod/definst/smil:Monitor_HIV-pos_Adults_NYS_Guidelines/Monitor_HIV-pos_Adults_NYS_Guidelines.smil/playlist.m3u8";
 				Uri video = Uri.parse(URL);
 				videoView.setMediaController(mediaController);
 				//MyProgressDialog.startDialog(this, "", "Buffering Video");
