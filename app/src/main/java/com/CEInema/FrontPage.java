@@ -78,7 +78,7 @@ public class FrontPage extends Activity {
 		
 		TextView contact = (TextView)findViewById(R.id.front_contact);
 	    contact.setMovementMethod(LinkMovementMethod.getInstance());
-		contact.setText(Html.fromHtml("For additional information about CEI program, please visit our website at <a href='http://ceitraining.org'> www.ceitraining.org</a> or call us at 1-800-233-5075"));
+		contact.setText(Html.fromHtml("For additional information about CEI program, please visit our website at <a href='http://ceitraining.org'> www.ceitraining.org</a> or call us at 1-866-637-2342"));//Update the phone number at 05/21/2015
 											
 		TextView disclaim = (TextView)findViewById(R.id.front_disclaim_content);
 		disclaim.setText(Html.fromHtml("University of Rochester provides technical support for website and application users, general maintenance to ensure their availability, and development resources for the continued evolution of their functionality. The University of Rochester is not responsible for any loss or damage caused by unauthorized or improper use of this website, application, and the information posted." +

@@ -97,6 +97,7 @@ public class VideoPlayer extends Activity {
 				if (URL.contains("_high.3gp"))
 					quality = "High Quality ";
 				//URL = "http://ceiconnect.org:1936/vod/definst/smil:Monitor_HIV-pos_Adults_NYS_Guidelines/Monitor_HIV-pos_Adults_NYS_Guidelines.smil/playlist.m3u8";
+				//URL = "http://ceitraining.org/sp2/wowza/Monitor_HIV-pos_Adults_NYS_Guidelines/Monitor_HIV-pos_Adults_NYS_Guidelines.smil";
 				Uri video = Uri.parse(URL);
 				videoView.setMediaController(mediaController);
 				//MyProgressDialog.startDialog(this, "", "Buffering Video");
@@ -133,7 +134,7 @@ public class VideoPlayer extends Activity {
 	 */
 	public boolean onCreateOptionsMenu(Menu menu) {
 	    MenuInflater inflater = getMenuInflater();
-	    inflater.inflate(R.layout.video_menu, menu);
+	    inflater.inflate(R.menu.video_menu, menu);
 	    return true;
 	}
 	

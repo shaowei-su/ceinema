@@ -148,7 +148,7 @@ public class CustomListView extends ListActivity{
 			}
 			if(type.equals("VIDEOS")) {
 				listType = new Videos(notID, presenter_id, sponsor_id, center_id, category_id);
-				Log.w("getListType notID, presenterIF",notID + "  "  + presenter_id);
+				//Log.w("getListType notID, presenterIF",notID + "  "  + presenter_id);
 			}
 			
 			return listType;
@@ -229,7 +229,7 @@ public class CustomListView extends ListActivity{
 	 */
 	public boolean onCreateOptionsMenu(Menu menu) {
 	    MenuInflater inflater = getMenuInflater();
-	    inflater.inflate(R.layout.menu, menu);
+	    inflater.inflate(R.menu.menu, menu);
 	    SubMenu fileMenu = menu.addSubMenu("Sort By");
 	    fileMenu.setIcon(R.drawable.ic_menu_sort_by_size);
 	    if (listType.sortableByName()) {
@@ -256,7 +256,7 @@ public class CustomListView extends ListActivity{
 	        case R.id.about:     
 	        	intent = new Intent();
 	    		intent.setClass(this, MyWebView.class);
-	    		intent.putExtra("URL", Configurator.SERVER_URL + "/app/information.html");
+	    		intent.putExtra("URL", "http://www.hivguidelines.org/clinical-guidelines/");
 	    		startActivity(intent);
 	    		break;
 	    		
