@@ -52,13 +52,13 @@ public final class R {
         public static final int LinearLayout01=0x7f080028;
         public static final int SlidingDrawer=0x7f080010;
         public static final int VideoView=0x7f080029;
-        public static final int about=0x7f080031;
+        public static final int about=0x7f08002f;
         public static final int bottomText=0x7f080020;
         public static final int bullet=0x7f080001;
         public static final int bulletItem=0x7f080000;
         public static final int bulletText=0x7f080003;
         public static final int buttonHolder=0x7f080006;
-        public static final int controller=0x7f08002a;
+        public static final int controller=0x7f080032;
         public static final int date=0x7f080014;
         public static final int description=0x7f08001b;
         public static final int enterMain=0x7f080009;
@@ -70,8 +70,8 @@ public final class R {
         public static final int front_introduction=0x7f080007;
         public static final int front_introduction_content=0x7f080008;
         public static final int guidelines=0x7f08001d;
-        public static final int home=0x7f08002b;
-        public static final int icon=0x7f08002f;
+        public static final int home=0x7f080030;
+        public static final int icon=0x7f08002d;
         public static final int imageView1=0x7f080023;
         public static final int image_doh=0x7f08000d;
         public static final int listIcon=0x7f080002;
@@ -80,7 +80,7 @@ public final class R {
         public static final int presenterEmployer=0x7f080017;
         public static final int presenterTitle=0x7f080016;
         public static final int radioGroup1=0x7f08001a;
-        public static final int refresh=0x7f080032;
+        public static final int refresh=0x7f080031;
         public static final int rel_layout=0x7f080004;
         public static final int related=0x7f080011;
         public static final int relatedBuffer=0x7f08000f;
@@ -94,12 +94,12 @@ public final class R {
         public static final int textView1=0x7f080024;
         public static final int thumbnail=0x7f080018;
         public static final int thumbnail2=0x7f080019;
-        public static final int title=0x7f08002e;
-        public static final int title_group=0x7f08002d;
+        public static final int title=0x7f08002c;
+        public static final int title_group=0x7f08002b;
         public static final int topText=0x7f08001f;
-        public static final int under_title=0x7f080030;
+        public static final int under_title=0x7f08002e;
         public static final int vid_title=0x7f080013;
-        public static final int webview=0x7f08002c;
+        public static final int webview=0x7f08002a;
     }
     public static final class layout {
         public static final int bullet_item=0x7f030000;
@@ -112,13 +112,13 @@ public final class R {
         public static final int splash=0x7f030007;
         public static final int tabs_bg=0x7f030008;
         public static final int video=0x7f030009;
-        public static final int video_menu=0x7f03000a;
-        public static final int webview=0x7f03000b;
-        public static final int window_title=0x7f03000c;
+        public static final int webview=0x7f03000a;
+        public static final int window_title=0x7f03000b;
     }
     public static final class menu {
         public static final int media_info_menu=0x7f070000;
         public static final int menu=0x7f070001;
+        public static final int video_menu=0x7f070002;
     }
     public static final class string {
         public static final int about=0x7f050000;
