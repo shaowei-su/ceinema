@@ -6,4 +6,4 @@
     <item android:id="@+id/home"
         android:title="Home"
         android:icon="@drawable/ic_menu_home" />
-</menu><!-- From: file:/Users/shaowei/StudioProjects/CEInema/app/src/main/res/layout/video_menu.xml -->
+</menu><!-- From: file:/Users/shaowei/StudioProjects/CEInema/app/src/main/res/menu/video_menu.xml -->

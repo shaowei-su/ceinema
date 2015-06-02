@@ -458,9 +458,10 @@ public class MediaInfoView extends TabActivity implements OnClickListener{
 	/**
 	 * Loads the options Menu
 	 */
-	public boolean onCreateOptionsMenu(Menu menu) {
+	public boolean onCreateOptionsMenu(android.view.Menu menu) {
+		super.onCreateOptionsMenu(menu);
 	    MenuInflater inflater = getMenuInflater();
-	    inflater.inflate(R.layout.media_info_menu, menu);
+	    inflater.inflate(R.menu.media_info_menu, menu);
 	    return true;
 	}
 	
@@ -474,7 +475,7 @@ public class MediaInfoView extends TabActivity implements OnClickListener{
 	        case R.id.about:     
 	        	intent = new Intent();
 	    		intent.setClass(this, MyWebView.class);
-	    		intent.putExtra("URL", Configurator.SERVER_URL +  "/app/information.html");
+	    		intent.putExtra("URL", "http://www.hivguidelines.org/clinical-guidelines/");
 	    		startActivity(intent);
 	    		break;
 	        case R.id.home:
