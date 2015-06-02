@@ -146,7 +146,7 @@ public class Tabs extends TabActivity {
 	    
 	    // Add it to tab host
 	    tabHost.addTab(spec);
-	       
+
 	    // Do it again
 	    // Presenters tab
 	    intent = new Intent().setClass(this, CustomListView.class);
@@ -162,6 +162,7 @@ public class Tabs extends TabActivity {
 	    spec = tabHost.newTabSpec(Configurator.TAB3).setIndicator(tabView)
 	                  .setContent(intent);
 	    tabHost.addTab(spec);
+
 	    
 	}
 	
